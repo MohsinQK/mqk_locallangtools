@@ -1,0 +1,61 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <h1 class="t3js-title-inlineedit">
+        Choose Labels to write
+    </h1>
+    <div class="container">
+        <div class="nowrap">
+            <f:form action="replace">
+                <input type="hidden" name="extensionName" value="{extensionName}" />
+                <ul class="list-tree text-monospace">
+                    <f:for each="{data}" key="filePath" as="matches">
+                        <li>
+                            <a class="list-tree-control list-tree-control-open" href="#">
+                                <i class="fa"></i>
+                            </a>
+                            <span class="list-tree-group">
+                                <span class="list-tree-label">{filePath} ({matches -> f:count()})</span>
+                            </span>
+                            <ul class="list-tree text-monospace">
+                                <f:for each="{matches}" key="lineNumber" as="match" iteration="i">
+                                    <f:if condition="{match -> f:count()} > 1">
+                                        <f:then>
+                                            <li>
+                                                <a class="list-tree-control list-tree-control-open" href="#">
+                                                    <i class="fa"></i>
+                                                </a>
+                                                <span class="list-tree-group">
+                                                    <span class="list-tree-label">{lineNumber}:</span>
+                                                </span>
+                                                <ul class="list-tree text-monospace">
+                                                    <f:for each="{match}" key="key" as="lineMatches" iteration="i">
+                                                        <li><input type="checkbox" name="replace[{filePath}][{lineNumber}][{lineMatches}]"> {lineMatches}</li>
+                                                    </f:for>
+                                                </ul>
+                                            </li>
+                                        </f:then>
+                                        <f:else>
+                                            <li>
+                                                <label style="cursor: pointer;" for="{filePath}-{lineNumber}-{match.0}">
+                                                    <input id="{filePath}-{lineNumber}-{match.0}" type="checkbox" name="replace[{filePath}][{lineNumber}][{match.0}]"> {lineNumber}: {match.0}
+                                                </label>
+                                            </li>
+                                        </f:else>
+                                    </f:if>
+                                </f:for>
+                            </ul>
+                        </li>
+                    </f:for>
+                </ul>
+                <button type="submit">Send to Locallang</button>
+            </f:form>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="toolbar">
+
+</f:section>
+
+</html>

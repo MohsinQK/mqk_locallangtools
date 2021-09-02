@@ -1,0 +1,28 @@
+{
+    "name": "mohsin/mqk-locallangtools",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Mohsin Khan",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mohsin\\MqkLocallangtools\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mohsin\\MqkLocallangtools\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "mohsin/mqk-locallangtools": "self.version",
+        "typo3-ter/mqk-locallangtools": "self.version"
+    }
+}

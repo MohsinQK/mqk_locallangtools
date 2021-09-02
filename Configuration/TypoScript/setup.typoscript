@@ -1,0 +1,15 @@
+
+# Module configuration
+module.tx_mqklocallangtools_web_mqklocallangtoolstolocallang {
+    persistence {
+        storagePid = {$module.tx_mqklocallangtools_tolocallang.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:mqk_locallangtools/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_mqklocallangtools_tolocallang.view.templateRootPath}
+        partialRootPaths.0 = EXT:mqk_locallangtools/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_mqklocallangtools_tolocallang.view.partialRootPath}
+        layoutRootPaths.0 = EXT:mqk_locallangtools/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_mqklocallangtools_tolocallang.view.layoutRootPath}
+    }
+}

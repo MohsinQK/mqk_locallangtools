@@ -1,0 +1,51 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Main => index, list, replace"
+                },
+                "description": "",
+                "key": "tolocallang",
+                "mainModule": "web",
+                "name": "Hardcoded Text To Locallang.xlf",
+                "tabLabel": "To Locallang"
+            }
+        ],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 9.5.0-9.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "9.5.0-9.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "mqk_locallangtools",
+        "name": "Hardcoded text to Locallang",
+        "originalExtensionKey": "omx_locallangtools",
+        "originalVendorName": "Ommax",
+        "persons": [
+            {
+                "company": "3AM",
+                "email": "mohsinqayyumkhan@gmail.com",
+                "name": "Mohsin Khan",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Mohsin"
+    },
+    "wires": [],
+    "storagePath": "\/Users\/mohsinkhan\/Desktop\/mohsin.mamp\/typo39.mohsin.mamp\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2021-09-02 03:50",
+        "extension_builder_version": "9.10.3",
+        "be_user": " (1)"
+    }
+}
