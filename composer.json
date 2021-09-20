@@ -22,7 +22,7 @@
         }
     },
     "replace": {
-        "MohsinQK/mqk-locallangtools": "self.version",
+        "mohsin-qk/mqk-locallangtools": "self.version",
         "typo3-ter/mqk-locallangtools": "self.version"
     }
 }
