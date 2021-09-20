@@ -12,8 +12,8 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Hardcoded text to Locallang',
-    'description' => 'Finds hardcoded text in Fluid HTMl templates and transfer them to locallang.xlf file automatically.',
-    'category' => 'plugin',
+    'description' => 'Finds hardcoded text in Fluid HTML templates and transfer them to locallang.xlf file automatically.',
+    'category' => 'module',
     'author' => 'Mohsin Khan',
     'author_email' => 'mohsinqayyumkhan@gmail.com',
     'state' => 'stable',
