@@ -1,5 +1,5 @@
 {
-    "name": "mohsin/mqk-locallangtools",
+    "name": "MohsinQK/mqk-locallangtools",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
@@ -22,7 +22,7 @@
         }
     },
     "replace": {
-        "mohsin/mqk-locallangtools": "self.version",
+        "MohsinQK/mqk-locallangtools": "self.version",
         "typo3-ter/mqk-locallangtools": "self.version"
     }
 }
