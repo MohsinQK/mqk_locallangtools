@@ -14,7 +14,7 @@ call_user_func(
                 '', // Position
                 [
                     'Main' => 'index, list, replace',
-                    
+
                 ],
                 [
                     'access' => 'user,group',
@@ -24,8 +24,5 @@ call_user_func(
             );
 
         }
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('mqk_locallangtools', 'Configuration/TypoScript', 'Hardcoded text to Locallang');
-
     }
 );
