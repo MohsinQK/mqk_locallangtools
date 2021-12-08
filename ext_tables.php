@@ -13,7 +13,7 @@ call_user_func(
                 'tolocallang', // Submodule key
                 '', // Position
                 [
-                    'Main' => 'index, list, replace',
+                    \Mohsin\MqkLocallangtools\Controller\MainController::class => 'index, list, replace',
 
                 ],
                 [
