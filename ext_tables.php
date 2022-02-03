@@ -17,7 +17,7 @@ call_user_func(
 
                 ],
                 [
-                    'access' => 'user,group',
+                    'access' => 'admin',
                     'icon'   => 'EXT:mqk_locallangtools/Resources/Public/Icons/user_mod_tolocallang.svg',
                     'labels' => 'LLL:EXT:mqk_locallangtools/Resources/Private/Language/locallang_tolocallang.xlf',
                 ]
