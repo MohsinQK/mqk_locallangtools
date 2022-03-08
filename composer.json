@@ -20,9 +20,5 @@
         "psr-4": {
             "Mohsin\\MqkLocallangtools\\Tests\\": "Tests"
         }
-    },
-    "replace": {
-        "mohsin-qk/mqk-locallangtools": "self.version",
-        "typo3-ter/mqk-locallangtools": "self.version"
     }
 }
